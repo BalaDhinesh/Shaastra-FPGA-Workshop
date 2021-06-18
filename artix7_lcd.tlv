@@ -120,8 +120,7 @@
                  fontSize: 15,
                  fontFamily: "Courier New",
                })
-               return {objects :{logic_block, lcd, line1, line2, info, clock}
-                       };
+          return {objects :{logic_block, lcd, line1, line2, info, clock}};
           },
        renderEach(){
            let str1 = '|top_pipe$str1'.asString().split("").reverse().join("")
