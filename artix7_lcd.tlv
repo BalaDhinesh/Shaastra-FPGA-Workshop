@@ -1,9 +1,9 @@
 \m4_TLV_version 1d: tl-x.org
 \SV
-\TLV artix7_lcd()
+\TLV artix7_lcd(|_pipe, @_stage, $datas, $out, $ii, $jj, $lcd_enable, $lcd_reset)
    //for viz part
-   |top_pipe
-      @0
+   |_pipe
+      @_stage
          m4_ifelse_block(M4_MAKERCHIP, 1, ['
          // VIZ supports only 8 bit mode (4 bit mode not supported)
          $one_or_two[1:0] = $reset ? 0 : $out == 8'h38 ? 2 : $out == 8'h30 ? 1 : >>1$one_or_two;    // 1-line mode or 2-line mode
