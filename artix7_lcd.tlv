@@ -187,7 +187,4 @@ $str2[8*16-1:0] = (/chars2[*]$char2 >> 8*$shift_left) << 8*$shift_right;
         this.getInitObjects().info.setText("data instruction")
      }
     }
-      
-   
-\SV
-   endmodule
+
